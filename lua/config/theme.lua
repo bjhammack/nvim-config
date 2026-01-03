@@ -1,4 +1,3 @@
--- lua/config/theme.lua
 local M = {}
 
 -- CHANGE THIS VALUE

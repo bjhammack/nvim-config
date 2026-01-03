@@ -1,20 +1,3 @@
-vim.api.nvim_create_autocmd("FileType", {
-  pattern = "copilot-chat",
-  callback = function()
-    vim.opt_local.wrap = true
-    vim.opt_local.linebreak = true
-    vim.opt_local.breakindent = true
-
-    -- makes markdown-y content feel less raw
-    vim.opt_local.conceallevel = 2
-    vim.opt_local.concealcursor = "nc"
-
-    -- quality-of-life
-    vim.opt_local.spell = false
-    vim.opt_local.signcolumn = "no"
-  end,
-})
-
 -- Auto-open Copilot Chat + bottom terminal, then return focus to original window
 vim.api.nvim_create_autocmd("VimEnter", {
   callback = function()
